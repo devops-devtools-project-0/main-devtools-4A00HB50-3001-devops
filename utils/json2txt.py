@@ -25,9 +25,9 @@ def main(params):
         for entry in data:
             if "jsonfile.json" in filename:
                 # People JSON
-                print(entry["id"], entry["name"], entry["age"])
+                print(f"id: {entry['id']}, name: {entry['name']}, age: {entry['age']}")
             elif "jsonfile2.json" in filename:
                 # Pizza JSON
-                print(entry["id"], entry["name"], entry["size"], entry["toppings"])
+                print(f"id: {entry['id']}, name: {entry['name']}, size: {entry['size']}, toppings: {entry['toppings']}")
             else: # Fallback for unexpected files
                 print("Wrong filename")
