@@ -24,7 +24,7 @@ def main(params):
     # Iterate over each entry and print results based on file name
         for entry in data:
             if "jsonfile.json" in filename:
-                # Original people JSON
+                # People JSON
                 print(entry["id"], entry["name"], entry["age"])
             elif "jsonfile2.json" in filename:
                 # Pizza JSON
